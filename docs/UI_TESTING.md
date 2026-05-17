@@ -13,7 +13,7 @@ Também foram incluídos cenários diferenciais de **responsividade**, **acessib
 | Ferramenta | Finalidade |
 |---|---|
 | Playwright | Automação dos testes de interface |
-| Cucumber / BDD | Escrita dos cenários em Gherkin |
+| BDD | Escrita dos cenários em Gherkin |
 | TypeScript | Linguagem utilizada no projeto |
 | Axe Core | Validação automatizada de acessibilidade |
 | Node.js / NPM | Execução e gerenciamento de dependências |
@@ -155,22 +155,7 @@ Foram executadas validações automatizadas para identificar violações sérias
 
 ---
 
-# 5. Resultados dos testes
-
-| Funcionalidade | Cenários | Resultado |
-|---|---:|---|
-| Autenticação | 14 | Automatizado |
-| Produtos | 6 | Automatizado |
-| Carrinho | 8 | Automatizado |
-| Checkout | 1 | Automatizado |
-| Navegação e logout | 7 | Automatizado |
-| Responsividade | 12 | Automatizado |
-| Acessibilidade | 6 | Automatizado |
-| **Total** | **54** | **Cenários mapeados e automatizados** |
-
----
-
-# 6. Bugs e pontos de atenção
+# 5. Bugs e pontos de atenção
 
 | ID | Área | Descrição | Impacto |
 |---|---|---|---|
@@ -187,7 +172,7 @@ Foram executadas validações automatizadas para identificar violações sérias
 
 ---
 
-# 7. Sugestões de melhorias
+<!-- # 6. Sugestões de melhorias
 
 - Adicionar cenários negativos no checkout.
 - Validar subtotal, taxa e total final da compra.
@@ -195,11 +180,11 @@ Foram executadas validações automatizadas para identificar violações sérias
 - Ampliar validações de acesso direto a rotas internas.
 - Gerar relatório HTML com screenshots e vídeos.
 - Separar a execução em suítes de smoke, regressão, responsividade e acessibilidade.
-- Manter uso de seletores estáveis, como `data-test`.
+- Manter uso de seletores estáveis, como `data-test`. -->
 
 ---
 
-# 8. Análise de riscos
+# 7. Análise de riscos
 
 | ID | Risco | Impacto | Mitigação |
 |---|---|---|---|
@@ -212,7 +197,7 @@ Foram executadas validações automatizadas para identificar violações sérias
 
 ---
 
-<!-- # 9. Evidências
+<!-- # 8. Evidências
 
 As evidências dos testes devem ser salvas no repositório, seguindo uma estrutura simples:
 
@@ -226,7 +211,7 @@ test-results/
 
 --- -->
 
-# 10. Conclusão
+# 9. Conclusão
 
 A etapa de UI Testing contemplou os principais fluxos solicitados para a aplicação Sauce Demo, cobrindo autenticação, produtos, carrinho, checkout, navegação e logout.
 

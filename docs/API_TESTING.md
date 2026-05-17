@@ -16,7 +16,6 @@ A collection foi construída no Postman com validações de status code, schema,
 | JavaScript | Scripts de pré-requisição e validações |
 | JSON Schema | Validação da estrutura das respostas |
 | Restful-Booker | API utilizada no teste |
-| Newman | Execução da collection via linha de comando, se necessário |
 
 ---
 
@@ -148,22 +147,7 @@ Foram testados cenários de exclusão com sucesso, exclusão de reserva inexiste
 
 ---
 
-# 5. Resultados dos testes
-
-| Fluxo | Cenários | Resultado |
-|---|---:|---|
-| Autenticação | 8 | Automatizado |
-| Criação de reservas | 6 | Automatizado |
-| Busca de IDs de reserva | 5 | Automatizado |
-| Consulta de reserva | 4 | Automatizado |
-| Atualização completa | 7 | Automatizado |
-| Atualização parcial | 5 | Automatizado |
-| Exclusão de reserva | 5 | Automatizado |
-| **Total** | **40** | **Requests/cenários mapeados e automatizados** |
-
----
-
-# 6. Análise de bugs e inconsistências
+# 5. Análise de bugs e inconsistências
 
 | ID | Área | Descrição | Impacto |
 |---|---|---|---|
@@ -180,7 +164,7 @@ Foram testados cenários de exclusão com sucesso, exclusão de reserva inexiste
 
 ---
 
-# 7. Sugestões de melhorias
+<!-- # 6. Sugestões de melhorias
 
 <!-- - Padronizar todos os endpoints utilizando `{{baseUrl}}` -->
 - Ajustar o cenário de PATCH para booking inexistente usando um ID fixo inexistente.
@@ -192,11 +176,11 @@ Foram testados cenários de exclusão com sucesso, exclusão de reserva inexiste
 - Separar melhor os pré-requisitos de criação e autenticação.
 - Incluir execução via Newman no pipeline.
 - Gerar relatório HTML da execução da collection.
-- Revisar expectativas de status code para erros de validação.
+- Revisar expectativas de status code para erros de validação. -->
 
 ---
 
-# 8. Análise de riscos
+# 7. Análise de riscos
 
 | ID | Risco | Impacto | Mitigação |
 |---|---|---|---|
@@ -211,7 +195,7 @@ Foram testados cenários de exclusão com sucesso, exclusão de reserva inexiste
 
 ---
 
-# 9. Variáveis de ambiente
+# 8. Variáveis de ambiente
 
 As variáveis abaixo são utilizadas na collection para parametrização dos testes.
 
@@ -251,7 +235,7 @@ Exemplo de ambiente:
 
 ---
 
-<!-- # 10. Evidências
+<!-- # 9. Evidências
 
 As evidências dos testes de API devem ser salvas no repositório, preferencialmente em uma estrutura separada.
 
@@ -271,7 +255,7 @@ evidencias/
 
 --- -->
 
-# 11. Conclusão
+# 10. Conclusão
 
 A etapa de API Testing contemplou os principais fluxos solicitados para a API Restful-Booker.
 
