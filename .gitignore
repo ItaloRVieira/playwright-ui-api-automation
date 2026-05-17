@@ -4,6 +4,7 @@ node_modules/
 # playwright
 test-results/
 playwright-report/
+evidencias/ui/reports/html/data/
 blob-report/
 playwright/.cache/
 playwright/.auth/

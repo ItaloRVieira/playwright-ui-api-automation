@@ -7,7 +7,11 @@
     "test": "playwright test",
     "test:ui": "playwright test --ui",
     "test:headed": "playwright test --headed",
-    "report": "playwright show-report"
+    "report": "playwright show-report",
+    "test:api": "newman run \"tests-api/Restful-Booker API Tests.postman_collection.json\"",
+    "test:api:report": "newman run \"tests-api/Restful-Booker API Tests.postman_collection.json\" -r cli,htmlextra --reporter-htmlextra-export \"evidencias/api/reports/api-report.html\"",
+    "test:ui:report": "playwright test && playwright show-report evidencias/ui/reports/html",
+    "report:ui": "playwright show-report evidencias/ui/reports/html"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +20,8 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.11.3",
     "@playwright/test": "^1.60.0",
-    "@types/node": "^25.8.0"
+    "@types/node": "^25.8.0",
+    "newman": "^6.2.2",
+    "newman-reporter-htmlextra": "^1.23.1"
   }
 }
