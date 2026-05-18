@@ -178,9 +178,7 @@ Foram testados cenários de exclusão com sucesso, exclusão de reserva inexiste
 - Gerar relatório HTML da execução da collection.
 - Revisar expectativas de status code para erros de validação. -->
 
----
-
-# 7. Análise de riscos
+# 6. Análise de riscos
 
 | ID | Risco | Impacto | Mitigação |
 |---|---|---|---|
@@ -195,7 +193,7 @@ Foram testados cenários de exclusão com sucesso, exclusão de reserva inexiste
 
 ---
 
-# 8. Variáveis de ambiente
+# 7. Variáveis de ambiente
 
 As variáveis abaixo são utilizadas na collection para parametrização dos testes.
 
@@ -235,27 +233,18 @@ Exemplo de ambiente:
 
 ---
 
-<!-- # 9. Evidências
+# 8. Evidências
 
 As evidências dos testes de API devem ser salvas no repositório, preferencialmente em uma estrutura separada.
 
 ```text
 evidencias/
 └── api/
-    ├── screenshots/
     └── reports/
-``` -->
+```
+---
 
-<!-- Exemplos de evidências esperadas:
-
-- Print da execução da collection no Postman.
-- Relatório gerado via Newman.
-- Evidências dos testes com falha, quando existirem.
-- Logs ou exportação dos resultados da execução.
-
---- -->
-
-# 10. Conclusão
+# 9. Conclusão
 
 A etapa de API Testing contemplou os principais fluxos solicitados para a API Restful-Booker.
 
