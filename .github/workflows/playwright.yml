@@ -37,9 +37,13 @@ jobs:
           mkdir -p evidencias/api/reports
 
       - name: Rodar testes de UI
+        id: ui_tests
+        continue-on-error: true
         run: npm run test
 
       - name: Rodar testes de API com Newman
+        id: api_tests
+        continue-on-error: true
         run: npm run test:api:report
 
       - name: Upload relatório Playwright
@@ -60,3 +64,14 @@ jobs:
           name: newman-api-report
           path: evidencias/api/reports/
           retention-days: 30
+
+      - name: Validar resultado final da execução
+        if: always()
+        run: |
+          echo "Resultado UI: ${{ steps.ui_tests.outcome }}"
+          echo "Resultado API: ${{ steps.api_tests.outcome }}"
+
+          if [ "${{ steps.ui_tests.outcome }}" != "success" ] || [ "${{ steps.api_tests.outcome }}" != "success" ]; then
+            echo "Uma ou mais suítes de teste falharam."
+            exit 1
+          fi
